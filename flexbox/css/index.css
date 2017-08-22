@@ -1,0 +1,46 @@
+/* ------------------------------------------ */
+/* DEV */
+/* ------------------------------------------ */
+/* CALL THE MIXIN */
+html {
+  background: linear-gradient(-10deg, #772953, #e95420);
+  min-height: 100vh; }
+
+.dev > * {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #fff;
+  border-radius: 2px; }
+
+.container > div:hover {
+  background-color: rgba(255, 255, 255, 0.25); }
+
+/* ------------------------------------------ */
+/* RULES */
+/* ------------------------------------------ */
+* {
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif; }
+
+body {
+  padding: 50px; }
+
+code {
+  margin: 1px 5px;
+  padding: 2px 5px 1px 5px;
+  font-family: monospace;
+  border-radius: 2px;
+  border: 1px dotted #fff; }
+
+.container > * {
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  justify-content: space-between;
+  text-align: center; }
+
+.container {
+  display: flex; }
+
+/*# sourceMappingURL=index.css.map */
