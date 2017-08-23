@@ -95,6 +95,5 @@ a:hover {
 }
 
 .sixth {
-  width: 15.7%; /* IE */
   flex: 0 1 calc(16.666666% - 20px);
 }
