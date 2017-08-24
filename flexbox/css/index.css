@@ -19,19 +19,21 @@ html {
 /* ------------------------------------------ */
 /* GRID */
 /* ------------------------------------------ */
-.grid {
-  display: flex; }
+.vcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.cell-half {
-  flex-basis: 50%; }
+.box {
+  width: 100%; }
 
-.cell-third {
-  flex-basis: 33.3333333%; }
+li {
+  list-style-type: none;
+  flex-basis: 25%;
+  margin-right: 25px; }
 
-.cell-fourth {
-  flex-basis: 25%; }
-
-.cell-sixth {
-  flex-basis: 16.666666%; }
+p {
+  margin: 0;
+  padding: 90px; }
 
 /*# sourceMappingURL=index.css.map */

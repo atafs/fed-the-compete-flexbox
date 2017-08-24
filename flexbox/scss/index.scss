@@ -32,22 +32,23 @@
 /* GRID */
 /* ------------------------------------------ */
 
-.grid {
+.vcenter {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cell-half {
-  flex-basis: 50%;
+.box {
+  width: 100%
 }
 
-.cell-third {
-  flex-basis: 33.3333333%;
-}
-
-.cell-fourth {
+li {
+  list-style-type: none;
   flex-basis: 25%;
+  margin-right: 25px;
 }
 
-.cell-sixth {
-  flex-basis: 16.666666%;
+p {
+  margin: 0;
+  padding: 90px;
 }
