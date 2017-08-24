@@ -3,24 +3,24 @@
 /* ------------------------------------------ */
 /* CALL THE MIXIN */
 html {
-  background: linear-gradient(-10deg, #772953, #e95420);
   height: 100vh; }
 
-.dev, .dev > * {
-  color: #fff;
+.box, .box > * {
+  color: #000;
   border: 1px transparent #fff;
-  background-color: rgba(255, 255, 255, 0.25);
+  background: linear-gradient(0deg, #fff, #fff);
   padding: 7px;
   margin: 7px; }
 
-.dev > div:hover {
+.box > div:hover {
   background-color: rgba(255, 255, 255, 0.35); }
 
 /* ------------------------------------------ */
 /* GRID */
 /* ------------------------------------------ */
 .grid {
-  display: flex; }
+  display: flex;
+  background: linear-gradient(0deg, #f6f6f6, #f6f6f6); }
 
 .cell-half {
   flex-basis: 50%; }
