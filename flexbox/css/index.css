@@ -22,6 +22,9 @@ html {
   display: flex;
   background: linear-gradient(0deg, #f6f6f6, #f6f6f6); }
 
+.cell-first {
+  flex-basis: 100%; }
+
 .cell-half {
   flex-basis: 50%; }
 
