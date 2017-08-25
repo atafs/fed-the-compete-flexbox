@@ -1,0 +1,112 @@
+/*  ------------------------------------------- */
+/* VARIABLES  */
+/*  ------------------------------------------- */
+/*  ------------------------------------------- */
+/* HEADER */
+/*  ------------------------------------------- */
+* {
+  margin: 0; }
+
+.header, .main {
+  font-family: 'DIN Condensed', 'Arial', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFDAC9;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(img/bg-pic.png);
+  background-size: cover;
+  background-position: center; }
+
+.header-nav {
+  display: flex;
+  padding: 10px;
+  align-items: baseline; }
+
+.header-nav-left {
+  flex: 1 1 0%;
+  font-size: 140%; }
+
+.header-nav-center {
+  flex: 6 1 0%; }
+
+.main {
+  display: flex;
+  flex-grow: 1; }
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 4 1 0%; }
+
+.header-left {
+  order: -1; }
+
+.header-side {
+  flex: 1 1 0%;
+  align-self: center;
+  transform: rotate(270deg);
+  font-size: 60%; }
+
+.header-text1 {
+  color: #fff;
+  font-size: 82px; }
+
+.header-text2 {
+  margin-top: -30px;
+  color: #fff;
+  font-size: 115px; }
+
+.header-text3 {
+  margin-top: -15px;
+  color: #fff;
+  font-size: 40px;
+  margin-left: 50px;
+  text-align: center;
+  margin-bottom: 150px; }
+
+.header-stamp {
+  height: 40%;
+  width: 40%;
+  margin-bottom: 80px; }
+
+/* ------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------ */
+li {
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 90%; }
+
+nav div p {
+  margin: 0;
+  font-size: 90%; }
+
+/*  ---------LINKS--------- */
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent; }
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid #ffceb8;
+  transition: border-bottom 0.2s, color 0.2s; }
+
+img {
+  height: 100%;
+  width: 100%; }
+
+.img-small {
+  height: 40%;
+  width: 40%; }
+
+/*# sourceMappingURL=holy-grail-header.css.map */

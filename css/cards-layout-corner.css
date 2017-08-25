@@ -1,0 +1,42 @@
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.nameofsection-cards-img-corner {
+  display: flex;
+  flex: 1 1 25%;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative; }
+
+.nameofsection-card-img-corner {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 3em;
+  background-color: #f5f5f5;
+  padding: 5em;
+  margin: 2em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+
+.img-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: auto;
+  color: red; }
+
+.text-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: auto;
+  color: red; }
+
+.opacity-6 {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+
+/*# sourceMappingURL=cards-layout-corner.css.map */

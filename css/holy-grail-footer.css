@@ -14,10 +14,10 @@ html {
 /*  ------------------------------------------- */
 /* Section - Single Row container */
 /*  ------------------------------------------- */
-body {
+section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  font-size: 14px;
   margin: 0;
   color: #fff;
   border: 1px transparent #fff;
@@ -25,7 +25,7 @@ body {
   padding: 7px;
   margin: 7px; }
 
-#main {
+#footer-main {
   display: flex;
   flex-grow: 1;
   color: #fff;
@@ -33,21 +33,17 @@ body {
   background-color: rgba(255, 255, 255, 0.25);
   padding: 7px;
   margin: 7px; }
-  #main * {
-    padding: 20px; }
 
-#content {
-  flex: 6 1 0%; }
-
-#secondary {
+#footer-logo {
   flex: 1 1 0%;
-  order: -1; }
+  text-align: right; }
 
-#tertiary {
-  flex: 1 1 0%; }
+#footer-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px; }
 
-#header, #footer {
-  text-align: center;
-  padding: 20px; }
+h3 {
+  margin: 0; }
 
-/*# sourceMappingURL=holy-grail.css.map */
+/*# sourceMappingURL=holy-grail-footer.css.map */
