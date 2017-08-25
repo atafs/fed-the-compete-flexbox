@@ -1,0 +1,77 @@
+/* ------------------------------------------ */
+/* DEV MIXINS */
+/* ------------------------------------------ */
+
+@mixin dev-background {
+  html {
+    background: linear-gradient(-10deg, #772953, #e95420);
+  }
+}
+
+@mixin dev-border {
+  color: #fff;
+  border: 1px transparent #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 7px;
+  margin: 7px;
+}
+
+@include dev-background;
+
+.dev {
+	@include dev-border;
+}
+
+/*  ------------------------------------------- */
+/* Section - Single Row container */
+/*  ------------------------------------------- */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+
+	@include dev-border;
+}
+
+#main {
+	display: flex;
+	flex-grow: 1;
+
+	@include dev-border;
+
+	* {
+		padding: 20px;
+	}	
+}
+
+#content {
+	flex: 6 1 0%;
+}
+
+#secondary {
+	flex: 1 1 0%;
+	order: -1;
+
+}
+
+#tertiary {
+	flex: 1 1 0%
+
+}
+
+#header, #footer {
+	text-align: center;
+	padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
