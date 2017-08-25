@@ -1,0 +1,54 @@
+/* ------------------------------------------ */
+/* DEV MIXINS */
+/* ------------------------------------------ */
+
+@mixin dev-background {
+  html {
+    background: linear-gradient(-10deg, #772953, #e95420);
+  }
+}
+
+@mixin dev-border {
+  color: #fff;
+  border: 1px transparent #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 7px;
+  margin: 7px;
+}
+
+@include dev-background;
+
+.dev {
+	@include dev-border;
+}
+
+/*  ------------------------------------------- */
+/* Section - Single Row container */
+/*  ------------------------------------------- */
+
+body {
+	height: 100vh;
+	font-family: arial;
+	font-size: 14px;
+}
+
+.container {
+	display: flex;
+
+
+}
+
+.left {
+	flex-basis: 10%;
+	@include dev-border;
+}
+
+.right {
+	flex-grow: 2;
+	text-align: right;
+	@include dev-border;
+}
+
+
+
+
