@@ -1,0 +1,197 @@
+/*  ------------------------------------------- */
+/* GENERAL SETUP
+/*  ------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-border; }
+
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.meet_our_community {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: #e2e8ea; }
+
+.meet_our_community-cards {
+  display: flex; }
+
+.meet_our_community-card {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 1em;
+  background-color: #f5f5f5;
+  margin: .8em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.meet_our_community-card-no-shadow {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 0.8em;
+  background-color: #f5f5f5;
+  margin: .8em;
+  background: #fff;
+  border-radius: 2px; }
+
+.meet_our_community-card-empty {
+  padding: 1em;
+  margin: .8em;
+  flex: 1 1 25%; }
+
+.meet_our_community-card-info {
+  margin-right: 1em;
+  margin-top: 1em; }
+
+.meet_our_community-card-body {
+  color: #555; }
+
+h1, h3 {
+  text-align: center;
+  color: #666; }
+
+/*  ------------------------------------------- */
+/* MEDIA QUERIES
+/*  ------------------------------------------- */
+@media (max-width: 900px) {
+  .blogs {
+    flex-direction: column; } }
+/*  ------------------------------------------- */
+/* GENERAL SETUP
+/*  ------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-border; }
+
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.meet_our_community {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: #e2e8ea; }
+
+.meet_our_community-cards {
+  display: flex; }
+
+.meet_our_community-card {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 1em;
+  background-color: #f5f5f5;
+  margin: .8em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.meet_our_community-card-no-shadow {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 0.8em;
+  background-color: #f5f5f5;
+  margin: .8em;
+  background: #fff;
+  border-radius: 2px; }
+
+.meet_our_community-card-empty {
+  padding: 1em;
+  margin: .8em;
+  flex: 1 1 25%; }
+
+.meet_our_community-card-info {
+  margin-right: 1em;
+  margin-top: 1em; }
+
+.meet_our_community-card-body {
+  color: #555; }
+
+h1, h3 {
+  text-align: center;
+  color: #666; }
+
+/*  ------------------------------------------- */
+/* MEDIA QUERIES
+/*  ------------------------------------------- */
+@media (max-width: 900px) {
+  .blogs {
+    flex-direction: column; } }
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.meet_our_community-cards-img {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.meet_our_community-card-img {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 3em;
+  background-color: #f5f5f5;
+  padding: 5em;
+  margin: 2em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+
+.opacity-3 {
+  opacity: .3;
+  padding: 4em;
+  margin: .8em;
+  color: #000;
+  font-weight: 900; }
+
+.opacity-6 {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+
+.color-black {
+  color: #000; }
+
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.meet_our_community-cards-img-corner {
+  display: flex;
+  flex: 1 1 25%;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative; }
+
+.meet_our_community-card-img-corner {
+  display: flex;
+  flex: 1 1 25%;
+  cursor: pointer;
+  padding: 3em;
+  background-color: #f5f5f5;
+  padding: 5em;
+  margin: 2em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+
+.img-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: auto;
+  color: red; }
+
+.text-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: auto;
+  color: red; }
+
+.opacity-6 {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+
+/*# sourceMappingURL=cards-our-menu-parallax.css.map */

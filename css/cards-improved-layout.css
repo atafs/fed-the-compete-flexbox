@@ -1,0 +1,60 @@
+/* ------------------------------------------ */
+/* DEV MIXINS */
+/* ------------------------------------------ */
+html {
+  background: linear-gradient(-10deg, #772953, #e95420); }
+
+.dev {
+  color: #000;
+  border: 1px transparent #fff;
+  background-color: rgba(255, 255, 255, 0.25); }
+
+/*  ------------------------------------------- */
+/* GENERAL SETUP
+/*  ------------------------------------------- */
+* {
+  /* box_model */
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100vh;
+  color: #000; }
+
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+.name_of_section {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px; }
+
+.row {
+  display: flex; }
+
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.box-model .card, .box-model .card-empty {
+  margin: .6em;
+  padding: .6em; }
+.box-model .column {
+  margin: 0;
+  padding: 0; }
+
+.card {
+  flex: 1 1 25%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 2px; }
+
+.card-empty {
+  flex: 1 1 50%;
+  background-color: rgba(255, 255, 255, 0); }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff; }
+
+/*# sourceMappingURL=cards-improved-layout.css.map */

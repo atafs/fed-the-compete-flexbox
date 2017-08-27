@@ -1,0 +1,173 @@
+/*  ------------------------------------------- */
+/* GENERAL SETUP
+/*  ------------------------------------------- */
+
+article {
+  text-align: center;
+}
+
+img {
+  width: 20%;
+  height: auto;
+
+}
+
+p {
+  font-family: Gill Sans, sans-serif;
+  text-align: left;
+}
+
+.header-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+}
+
+
+/*  ------------------------------------------- */
+/* LAYOUT IN FLEX
+/*  ------------------------------------------- */
+
+.row {
+  display: flex;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.box-model {
+  .card, .card-same-color {
+    margin-top: .6em;
+    margin-left: .6em;
+    margin-right: .6em;
+    margin-bottom: 0;
+    padding: 5em;
+    z-index: 1;
+
+  }
+
+  .card-same-color {
+    margin: .6em;
+    padding-left: .6em;
+    padding-right: 9.4em;
+
+  }
+
+  .card-0 {
+    margin: 0;
+    padding: 0;
+
+    .img1 {
+      margin-top: -20px;
+      width: 5em;
+      height: 5em;
+    }
+
+    .img2 {
+        position: absolute;
+        right: 0;
+
+        margin-top: -40px;
+
+        width: 50px;
+        height: 75px;
+
+    }
+
+    .img-behind-2 {
+      margin-top: -6em;
+      margin-right: -20em;
+      width: auto;
+      height: auto;
+    }
+  }
+
+
+}
+
+.card {
+  flex: 1 1 25%;
+  background-color: #fff;
+
+  //material design cards https://codepen.io/sdthornton/pen/wBZdXq
+  border-radius: 2px;
+
+  width: 250px;
+  height: 250px;
+
+}
+
+.card-same-color, .card-0 {
+  flex: 1 1 25%;
+  background-color: rgba(255, 255, 255, 0);
+  margin: .6em;
+
+}
+
+.card-content {
+  a {
+    font-size: 2.2em;
+    text-align: left;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: #333;
+    font-family: 'DIN Condensed', 'Arial', sans-serif;
+    font-weight: 900;
+  }
+
+  p {
+    text-align: left;
+    margin-bottom: 2em;
+  }
+
+  div {
+    text-align: right;
+
+  }
+}
+
+.meet_our_community {
+  font-family: 'DIN Condensed', 'Arial', sans-serif;
+  font-size: 10px;
+  //f8f8f8
+  background: linear-gradient(0deg, #e5e5e5, #e5e5e5);
+  padding: 100px;
+
+  .card-bg-img {
+    background-repeat: no-repeat;
+    background-size:90% 90%;
+    background-position: center;
+
+    &.img1 {
+      background-image: url('../assets/pic1.png');
+    }
+
+    &.img2 {
+      background-image: url('../assets/pic2.png');
+
+    }
+
+    &.img3 {
+      background-image: url('../assets/pic3.png');
+
+    }
+  }
+}
+
+.img-parent {
+  position: relative;
+}
+
+.img-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 5em;
+  height: 5em;
+}
