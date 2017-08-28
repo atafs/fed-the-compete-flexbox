@@ -36,6 +36,11 @@ p {
 .row {
   display: flex; }
 
+.container {
+  display: flex; 
+  flex-direction: column; 
+  margin: 60px; }
+
 .column {
   display: flex;
   flex-direction: column; }
@@ -72,31 +77,57 @@ p {
 .card {
   flex: 1 1 25%;
   background-color: #fff;
-  border-radius: 2px; }
+  border-radius: 2px; 
+  box-shadow: 2px 2px 2px #d9d9d9; }
 
 .card-same-color, .card-0 {
   flex: 1 1 25%;
   background-color: rgba(255, 255, 255, 0);
   margin: .6em; }
 
+.card-same-color-title h1 {
+    font-family: 'DIN Condensed', Helvetica, sans-serif;;
+    text-align: left;
+    font-size: 62px;
+    color: #333;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: -30px; }
+
 .card-content a {
-  font-size: 1.7em;
+  font-size: 22px;
   text-align: left;
   margin-bottom: 1em; }
 .card-content p {
+  font-size: 15px;
   text-align: left;
   margin-bottom: 2em; }
 .card-content div {
+  font-size: 14px;
   text-align: right; }
+
+.btn-full:link,
+.btn-full:visited  {
+    background-color: #ffdac9; 
+    border: 1px solid #e67e22;
+    font-size: 18px;
+    color: #000; }
+
+card-content .btn-full:hover,
+card-content .btn-full:active {
+    border: 1px solid #cf6d17; }
+
+
 
 .meet_our_community .card-bg-img {
   background-repeat: no-repeat;
-  background-size: 90% 90%;
+  background-size: cover;
   background-position: center; }
   .meet_our_community .card-bg-img.img1 {
     background-image: url("../assets/pic1.png"); }
   .meet_our_community .card-bg-img.img2 {
-    background-image: url("../assets/pic2.png"); }
+    background-image: url("../assets/pic2.png"); 
+    z-index: -1;}
   .meet_our_community .card-bg-img.img3 {
     background-image: url("../assets/pic3.png"); }
 
@@ -107,16 +138,15 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  width: 5em;
-  height: 5em; }
+  width: 6em;
+  height: 6em; }
 
 /*  ------------------------------------------- */
 /* CARDS
 /*  ------------------------------------------- */
 .meet_our_community {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 10px;
-  background: linear-gradient(0deg, #e5e5e5, #e5e5e5); }
+  font-size: 10px; }
 
 .meet_our_community-cards {
   display: flex; }
@@ -146,46 +176,39 @@ p {
   margin: .8em;
   flex: 1 1 25%; }
 
-/*  ------------------------------------------- */
-/* CARDS CORNER
-/*  ------------------------------------------- */
-.meet_our_community-cards-img-corner {
-  display: flex;
-  flex: 1 1 25%;
-  background-color: #f5f5f5;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  position: relative; }
 
-.meet_our_community-card-img-corner {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  padding: 3em;
-  background-color: #f5f5f5;
-  padding: 5em;
-  margin: 2em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+/* ------------------------------------------ */
+/* ANIMATIONS */
+/* ------------------------------------------ */
 
-.img-bottom-center-parent {
-  position: relative; }
 
-.img-bottom-center {
-  background-color: #555;
-  position: absolute;
-  height: auto;
-  color: red; }
+.js--wp-1 {
+    opacity: 0;
+    -webkit-animation-duration: 1.0s;
+    animation-duration: 1.0s;
+}
 
-.text-corner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75px;
-  height: auto;
-  color: red; }
+.js--wp-2 {
+    opacity: 0;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+}
 
-.opacity-6 {
-  color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg"); }
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+}
 
-/*# sourceMappingURL=cards-meet-our-community.css.map */
+.js--wp-4 {
+    opacity: 0;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+}
+
+.js--wp-1.animated, 
+.js--wp-2.animated, 
+.js--wp-3.animated,
+.js--wp-4.animated {
+    opacity: 1;
+}
