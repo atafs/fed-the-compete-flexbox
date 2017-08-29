@@ -2,62 +2,96 @@
 <html lang="en">
 <head>
     <title>Cards Grid Layout</title>
-    <link rel="stylesheet" href="css/cards-layout.css">
-    <link rel="stylesheet" href="css/cards-layout-ghost.css">
-    <link rel="stylesheet" href="css/cards-layout-corner.css">
+    <link rel="stylesheet" href="css/collaborate-with-us-form.css">
 
 </head>
 <body>
 
-    <h1>Cards Grid Layout</h1>
+    <section class="section-with-us">
+   
 
-    <section class="nameofsection">
-        <!-- ROW -->
-        <div class="nameofsection-cards">
-            <article class="nameofsection-card">1</article>
-            <article class="nameofsection-card">2</article>
-            <article class="nameofsection-card-empty"></article>
-            <article class="nameofsection-card">4</article>
-        </div>
-
-        <!-- ROW -->
-        <div class="nameofsection-cards">
-            <article class="nameofsection-card-no-shadow">5</article>
-            <article class="nameofsection-card-empty"></article>
-            <article class="nameofsection-card-no-shadow">7</article>
-            <article class="nameofsection-card-no-shadow">8</article>
-        </div>
-
-         <!-- ROW -->
-        <div class="nameofsection-cards">
-            <article class="nameofsection-card">9</article>
-            <article class="nameofsection-card">10</article>
-            <article class="nameofsection-card">11</article>
-            <article class="nameofsection-card-empty"></article>
-        </div>
-
-         <!-- ROW -->
-        <div class="nameofsection-cards">
-            <article class="nameofsection-card-empty"></article>
-            <article class="nameofsection-card">14</article>
-            <article class="nameofsection-card">15</article>
-            <article class="nameofsection-card">16</article>
-        </div>
-
-        <!-- ROW -->
-        <div class="nameofsection-cards-img ">
-            <article class="nameofsection-card-img opacity-3">
-                <div class="color-black">
-                    <p>17- Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit obcaecati non reiciendis sed veniam ex eveniet incidunt blanditiis repudiandae hic fugit, debitis voluptate amet temporibus optio adipisci fuga voluptatum.</p>
+         <!-- row -->
+        <div class="row box dev"> 
+            <article class="column card-0"></article>
+            <article class="column card-0">
+                <!-- row -->
+                <div class="row box">   
+                    <article class="column card-empty card-img">
+                        <img class="img-form" src="assets/bg-detail.png" alt="details">
+                    </article>
+                    <article class="column card-empty"</article>
                 </div>
             </article>
-            <article class="nameofsection-card-img opacity-6">18</article>
-            <article class="nameofsection-card-img opacity-6">
-                <p>19- Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit obcaecati non reiciendis sed veniam ex eveniet incidunt blanditiis repudiandae hic fugit, debitis voluptate amet temporibus optio adipisci fuga voluptatum.</p>
+        </div>
+
+         <!-- row -->
+        <div class="row box dev"> 
+            <article class="column card-0">
+                <div class="card">
+                  <h1>Collaborate</br><span>With Us</span></h1>
+                  <div class="header-line"></div>
+                </div>
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quia hic temporibus architecto non laudantium quibusdam, quasi reiciendis illum voluptate.</p>
+                </div>
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit nulla earum corporis quos harum aut molestias repellat ex cum fuga quasi deleniti, modi autem recusandae nobis aliquid. Laboriosam, dignissimos?</p>
+                </div>
+            </article>
+            <article class="column card-0">
+                <!-- row -->
+                <div class="row box">   
+                    <article class="column card-empty"</article>
+                </div>
+
+                 <!-- row -->
+                <div class="row box">   
+                    <article class="column card-form">
+                        <div class="form-group">
+                          <input type="text" required="required"/>
+                          <label class="control-label" for="input">NAME</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" required="required"/>
+                          <label class="control-label" for="input">PHONE</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <select>
+                            <option>Expert</option>
+                            <option>More a less</option>
+                          </select>
+                          <label class="control-label" for="select">EXPERIENCE</label><i class="bar"></i>
+                        </div>
+                    </article>
+                    <article class="column card-form">
+                        <div class="form-group">
+                          <input type="text" required="required"/>
+                          <label class="control-label" for="input">SURNAME</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" required="required"/>
+                          <label class="control-label" for="input">EMAIL</label><i class="bar"></i>
+                        </div>
+                         <div class="form-group">
+                          <select>
+                            <option>Facebook</option>
+                            <option>LinkedIn</option>
+                          </select>
+                          <label class="control-label" for="select">WHERE DID YOU HEAR</label><i class="bar"></i>
+                        </div>
+                    </article>
+                </div>
+
+                 <!-- row -->
+                <div class="row box">   
+                    <article class="column card-empty"></article>
+                    <article class="column card btn-send">
+                      <a href="#">SEND</a>
+                    </article>
+                </div>
             </article>
         </div>
 
     </section>
-
 </body>
 </html>
