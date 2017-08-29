@@ -1,260 +1,249 @@
+/* ------------------------------------------ */
+/* DEV MIXINS */
+/* ------------------------------------------ */
+
+$background-color: rgba(255, 255, 255, 0.25);
+
+@mixin dev-background {
+  html {
+    background: linear-gradient(-10deg, #772953, #e95420);
+  }
+}
+
+@mixin dev-border {
+  color: #000;
+  border: 1px transparent #fff;
+  background-color: $background-color
+}
+
+
+
 
 /*  ------------------------------------------- */
 /* GENERAL SETUP
 /*  ------------------------------------------- */
 
 * {
+  /* box_model */
   margin: 0;
   padding: 0;
-  box-sizing: box-border;
+  box-sizing: border-box;
 }
 
 
 /*  ------------------------------------------- */
-/* CARDS
+/* BOX MODEL (box_model)
 /*  ------------------------------------------- */
-.meet_our_community {
+
+.section-our-menu {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 10px;
-  background-color: #e2e8ea;
-  //background: linear-gradient(0deg, #f8f8f8, #f8f8f8);
 
-}
-
-.meet_our_community-cards {
-  display: flex;
-}
-
-.meet_our_community-card {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  padding: 1em;
-  background-color: #f5f5f5;
-  margin: .8em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.meet_our_community-card-no-shadow {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  padding: 0.8em;
-  background-color: #f5f5f5;
-  margin: .8em;
-
-  //material design cards https://codepen.io/sdthornton/pen/wBZdXq
-  background: #fff;
-  border-radius: 2px;
-}
-
-.meet_our_community-card-empty {
-  padding: 1em;
-  margin: .8em;
-  flex: 1 1 25%;
-}
-
-.meet_our_community-card-info {
-  margin-right: 1em;
-  margin-top: 1em;
-}
-
-.meet_our_community-card-body {
-  color: #555;
-}
-
-h1, h3 {
-  text-align: center;
-  color: #666;
-}
-
-
-/*  ------------------------------------------- */
-/* MEDIA QUERIES
-/*  ------------------------------------------- */
-@media (max-width: 900px) {
-
-  .blogs {
-    flex-direction: column; }
-}
-
-/*  ------------------------------------------- */
-/* GENERAL SETUP
-/*  ------------------------------------------- */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: box-border;
-}
-
-
-/*  ------------------------------------------- */
-/* CARDS
-/*  ------------------------------------------- */
-.meet_our_community {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 10px;
-  background-color: #e2e8ea;
-  //background: linear-gradient(0deg, #f8f8f8, #f8f8f8);
-
-}
-
-.meet_our_community-cards {
-  display: flex;
-}
-
-.meet_our_community-card {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  padding: 1em;
-  background-color: #f5f5f5;
-  margin: .8em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.meet_our_community-card-no-shadow {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  padding: 0.8em;
-  background-color: #f5f5f5;
-  margin: .8em;
-
-  //material design cards https://codepen.io/sdthornton/pen/wBZdXq
-  background: #fff;
-  border-radius: 2px;
-}
-
-.meet_our_community-card-empty {
-  padding: 1em;
-  margin: .8em;
-  flex: 1 1 25%;
-}
-
-.meet_our_community-card-info {
-  margin-right: 1em;
-  margin-top: 1em;
-}
-
-.meet_our_community-card-body {
-  color: #555;
-}
-
-h1, h3 {
-  text-align: center;
-  color: #666;
-}
-
-
-/*  ------------------------------------------- */
-/* MEDIA QUERIES
-/*  ------------------------------------------- */
-@media (max-width: 900px) {
-
-  .blogs {
-    flex-direction: column; }
-}
-
-
-
-/*  ------------------------------------------- */
-/* CARDS
-/*  ------------------------------------------- */
-
-
-.meet_our_community-cards-img {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
-}
-
-.meet_our_community-card-img {
-  display: flex;
-  flex: 1 1 25%;
-  cursor: pointer;
-  padding: 3em;
-  background-color: #f5f5f5;
-  padding: 5em;
-  margin: 2em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
-  background-image: url('http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg');
-}
-
-.opacity-3 {
-  opacity: .3;
-
-  padding: 4em;
-  margin: .8em;
-  color: #000;
-  font-weight: 900;
-}
-
-.opacity-6 {
-  color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg');
-}
-
-.color-black {
-  color: #000;
-}
-
-
-
-
-/*  ------------------------------------------- */
-/* CARDS
-/*  ------------------------------------------- */
-
-.meet_our_community-cards-img-corner {
-  display: flex;
-  flex: 1 1 25%;
-  background-color: #f5f5f5;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 1366px;
+  height: 1000px;
 
   position: relative;
+
+  background-color: #f8f8f8;
+
+  .box {
+    padding-left: 80px;
+    padding-right: 80px;
+
+
+  .card, .card-empty {
+    margin: 10px 12px 60px 15px;
+    padding: 15px 0 15px 40px;
+
+    &:first-child {
+      margin-top: 300px;
+    }
+
+    }
+
+    .card-0 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .column {
+      padding-right: 5px;
+    }
+
+  }
+
+  .row {
+    display: flex;
+
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #cecece;
+    align-items: stretch;
+
+    &:last-child {
+      border: 0;
+    }
+  }
 }
 
-.meet_our_community-card-img-corner {
-  display: flex;
+
+/*  ------------------------------------------- */
+/* CARDS
+/*  ------------------------------------------- */
+
+
+.card, .card-0 {
   flex: 1 1 25%;
-  cursor: pointer;
-  padding: 3em;
-  background-color: #f5f5f5;
-  padding: 5em;
-  margin: 2em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: $background-color;
+  font-family: DIN Condensed, sans-serif;
+  color: #333;
 
-  background-image: url('http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg');
+  //material design cards https://codepen.io/sdthornton/pen/wBZdXq
+  border-radius: 2px;
+
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+
+  }
+
+  p {
+    font-family: Gill Sans, sans-serif;
+    font-size: 15px;
+    color: #595959;
+
+    /* box_model */
+    margin: 10px 0 20px 0;
+  }
+
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+  }
+
+  a:link,
+  a:visited {
+    border: 3px solid #ffdac9;
+    color: #333;
+    font-weight: bold;
+
+
+    /* box_model */
+    padding: 8px;
+  }
+
+  a:hover,
+  a:active {
+    background-color: #ffdac9;
+  }
 
 }
 
-.img-corner {
+
+/* absolute position */
+.section-our-menu {
+
+    h1 {
+      font-family: DIN Condensed, sans-serif;
+      font-size: 62px;
+      color: #000;
+      text-transform: uppercase;
+      color: #333;
+      z-index: 2;
+
+      position: absolute;
+      left: 40%;
+
+      &.header1 {
+        position: absolute;
+        top: 200px;
+        left: 115px;
+      }
+
+      &.header2 {
+        position: absolute;
+        top: 300px;
+        left: 315px;
+      }
+
+      &.header3 {
+        position: absolute;
+        top: 230px;
+        left: 515px;
+      }
+
+      &.header4 {
+        position: absolute;
+        top: 150px;
+        left: 715px;
+      }
+    } 
+}
+
+.header-title-a {
+  font-family: DIN Condensed, sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  color: #333;
+
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 70px;
+  left: 47%;
 
-  width: 75px;
-  height: auto;
-  color: red;
+  text-decoration: none;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+  z-index: 1;
+
+  &:link,
+  &:visited {
+    background-color: #ffdac9;
+    border: 2px solid #ffdac9;
+    font-weight: bold;
+
+    /* box_model */
+    padding: 8px;
+  }
+
+  &:hover,
+  &:active {
+    border: 2px solid #ffdac9;
+    background-color: #f8f8f8;
+  }
 }
 
-.text-corner {
-  position: absolute;
-  top: 0;
-  left: 0;
+.header-line {
+    width:200px;
+    height:8px;
+    background: #ffdac9;
 
-  width: 75px;
-  height: auto;
-  color: red;
+    position: absolute;
+    top: 30px;
+    left: 37%;
 }
 
-.opacity-6 {
-  color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('http://www.siwallpaperhd.com/wp-content/uploads/2015/07/nature_1080p_background.jpg');
+/* ------------------------------------------ */
+/* ANIMATIONS */
+/* ------------------------------------------ */
+
+.js--wp-1-our-menu, 
+.js--wp-2-our-menu, 
+.js--wp-3-our-menu,
+.js--wp-4-our-menu {
+    opacity: 0;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
+
+.js--wp-1-our-menu.animated, 
+.js--wp-2-our-menu.animated, 
+.js--wp-3-our-menu.animated,
+.js--wp-4-our-menu.animated {
+    opacity: 1;
+}
+

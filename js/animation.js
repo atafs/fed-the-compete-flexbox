@@ -1,6 +1,7 @@
 $(document).ready(function() {
-   
-    /* Animation */
+
+
+    /* Meet our community */
     var waypoint = new Waypoint({
       element: document.getElementsByClassName('js--wp-1'),
       handler: function(direction) {
@@ -10,5 +11,4 @@ $(document).ready(function() {
          $('.js--wp-4').addClass('animated fadeInUp');  
       }
     })
-
 });
