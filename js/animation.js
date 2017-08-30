@@ -12,6 +12,4 @@ $(document).ready(function() {
       }
     })
 
-    /* Parallax */
-    $('#main').stellar();
 });

@@ -121,7 +121,7 @@ card-content .btn-full:active {
 
 .meet_our_community .card-bg-img {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:  90% 90%;
   background-position: center; }
   .meet_our_community .card-bg-img.img1 {
     background-image: url("../assets/pic1.png"); }
